@@ -326,7 +326,7 @@
   </div>
   <h2 class="our_goods_title">Наши изделия</h2>
   <section class="our_goods">
-    <div class="good">
+    <article class="good">
       <div class="good_image_box">
         <picture>
         <source src="images/shop-item-tablet1.jpg" media="">
@@ -336,16 +336,62 @@
       </div>
       <div class="good_content">
         <h2 class="good_title">Подушки на диван</h2>
-        <p>Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="good_link">здесь</a></p>
-      </div>
-      <footer class="good_footer">
-        <div class="product_price">
-          <span class="good_old_price">1000 ₽</span>
-          <span class="good_price">800 ₽</span>
+        <div class="good_descrition">
+            <p class="">Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="good_link">здесь</a></p>
         </div>
-        <button type="button" class="good_button">В магазин</button>
-      </footer>
-    </div>
+        <footer class="good_footer">
+          <div class="product_price">
+            <span class="good_old_price">1000 ₽</span>
+            <span class="good_price">800 ₽</span>
+          </div>
+          <button type="button" class="good_button"><span class="visually-hidden">кнопка "В магазин"</span>В магазин</button>
+        </footer>
+      </div>
+    </article>
+    <article class="good">
+      <div class="good_image_box">
+        <picture>
+        <source src="images/shop-item-tablet1.jpg" media="">
+        <source src="images/shop-item-mobile1.jpg" media="">
+        <img src="images/shop-item-desk2.jpg" alt="Подушка" class="good_image">
+        </picture>
+      </div>
+      <div class="good_content">
+        <h2 class="good_title">Кукла "зайчик"</h2>
+        <div class="good_descrition">
+            <p>Интерьерная рукодельная кукла "Зайчик", созданию которой посвященая<a href="#0" class="good_link">весенняя серия постов</a> в блоге и несколько подкастов</p>
+        </div>
+        <footer class="good_footer">
+          <div class="product_price">
+            <span class="good_old_price"></span>
+            <span class="good_price">3500 ₽</span>
+          </div>
+          <button type="button" class="good_button"><span class="visually-hidden">кнопка "В магазин"</span>В магазин</button>
+        </footer>
+      </div>
+    </article>
+    <article class="good">
+      <div class="good_image_box">
+        <picture>
+        <source src="images/shop-item-tablet1.jpg" media="">
+        <source src="images/shop-item-mobile1.jpg" media="">
+        <img src="images/shop-item-desk3.jpg" alt="Подушка" class="good_image">
+        </picture>
+      </div>
+      <div class="good_content">
+        <h2 class="good_title">Шестиугольная рамка</h2>
+        <div class="good_descrition">
+            <p>Необычная рамка для украшения дома из видео<a href="#0" class="good_link">"Как сделать рамку из подручных средств за 30 минут"</a></p>
+        </div>
+        <footer class="good_footer">
+          <div class="product_price">
+            <span class="good_old_price">500 ₽</span>
+            <span class="good_price">400 ₽</span>
+          </div>
+          <button type="button" class="good_button"><span class="visually-hidden">кнопка "В магазин"</span>В магазин</button>
+        </footer>
+      </div>
+    </article>
   </section>
   <footer class="footer">
     <ul class="footer_list">
@@ -369,6 +415,39 @@
       <a href="#0" class="footer_text">Copyright © 2009–2019 City Blog LLC.</a>
     </div>
   </footer>
+  <div class="popup">
+      <h2 class="popup_title">Ваш Фидбек</h2>
+      <form class="form" action="index.html" method="post">
+        <div class="form_group">
+          <label class="select-group" for="">
+            <span>Как часто вы заходите на сайт?</span>
+            <select class="select" name="">
+              <option value="almost every day">Почти каждый день</option>
+              <option value="almost every day">Почти каждый день</option>
+              <option value="almost every day">Почти каждый день</option>
+            </select>
+          </label>
+        </div>
+        <div class="form_group">
+          <label class="radio_group">
+            <span>Вы подписаны на e-mail рассылку?</span>
+            <input type="radio" name="radio_group">
+            <span class="radio_group_text">Да</span>
+            <input type="radio" name="radio_group">
+            <span>Нет</span>
+          </label>
+        </div>
+        <div class="form_group">
+          <label for="">
+            <span>Расскажите какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="field textarea" placeholder="Может, больше рецептов?"></textarea>
+          </label>
+        </div>
+        <div class="form_group">
+          <button type="button" name="button">Отправить</button>
+        </div>
+      </form>
+  </div>
   </body>
 
   </html>
