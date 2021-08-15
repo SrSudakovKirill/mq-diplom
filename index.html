@@ -14,6 +14,9 @@
     <div class="container_header">
       <a href="/"><img src="swg/noemi-logo.svg" class="logo-image" alt="логотип noemi"></a>
       <nav class="menu">
+      <button type="button" class="menu_button js_nenu_button">
+        <span class="menu_button-label"></span>
+      </button>
         <ul class="menu-list">
           <li class="menu-list-item">
             <a class="menu-link" href="#0">главная</a>
@@ -115,7 +118,9 @@
               </li>
             </ul>
             <h2><a href=#0 class="post_name">10 мест, ради которых стоит проснуться на рассвете</a></h2>
+            <div class="post_text_header">
             <time class="post_time" datetime="2019-06-10">10 июня 2019</time> <span class="author">Неизвестный автор</span>
+            </div>
             <div class="post_desk">
               <p>Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
             </div>
@@ -136,7 +141,9 @@
               </li>
             </ul>
             <h2><a href=#0 class="post_name">Йога для начинающих в домашних условиях</a></h2>
+            <div class="post_text_header">
             <time class="post_time" datetime="2019-06-10">10 июня 2019</time> <span class="author">Неизвестный автор</span>
+            </div>
             <div class="post_desk">
               <p>Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу</p>
             </div>
@@ -154,7 +161,9 @@
               </li>
             </ul>
             <h2><a href=#0 class="post_name">Лучшие музыкальные фестивали этого лета</a></h2>
+            <div class="post_text_header">
             <time class="post_time" datetime="2019-06-10">10 июня 2019</time> <span class="author">Неизвестный автор</span>
+            </div>
             <div class="post_desk">
               <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
               <p>Мы составили список лучших летних фестивалей по всему миру.</p>
@@ -176,7 +185,9 @@
               </li>
             </ul>
             <h2><a href=#0 class="post_name">Наукоёмкий подход к кулинарии</a></h2>
+            <div class="post_text_header">
             <time class="post_time" datetime="2019-06-10">10 июня 2019</time> <span class="author">Неизвестный автор</span>
+            </div>
             <div class="post_desk">
               <p>Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
             </div>
@@ -200,7 +211,9 @@
               </li>
             </ul>
             <h2><a href=#0 class="post_name">делаем модные принты на подушках для интерьера</a></h2>
+            <div class="post_text_header">
             <time class="post_time" datetime="2019-06-10">10 июня 2019</time> <span class="author">Неизвестный автор</span>
+            </div>
             <div class="post_desk">
               <p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
             </div>
@@ -416,37 +429,45 @@
     </div>
   </footer>
   <div class="popup">
-      <h2 class="popup_title">Ваш Фидбек</h2>
+    <div class="popup_conteiner">
+    <div class="popup_content">
+      <h2 class="popup_title margin_popup">Ваш Фидбек</h2>
       <form class="form" action="index.html" method="post">
         <div class="form_group">
           <label class="select-group" for="">
-            <span>Как часто вы заходите на сайт?</span>
+            <span class="field-label">Как часто вы заходите на сайт?</span>
             <select class="select" name="">
               <option value="almost every day">Почти каждый день</option>
-              <option value="almost every day">Почти каждый день</option>
-              <option value="almost every day">Почти каждый день</option>
+              <option value="almost every day">Раз в несколько дней</option>
+              <option value="almost every day">Раз в несколько недель</option>
+              <option value="almost every day">Раз в год</option>
             </select>
           </label>
         </div>
         <div class="form_group">
-          <label class="radio_group">
-            <span>Вы подписаны на e-mail рассылку?</span>
-            <input type="radio" name="radio_group">
+            <span class="field-label">Вы подписаны на e-mail рассылку?</span>
+            <label class="radio_group">
+            <input class="radio" type="radio" name="radio_group">
             <span class="radio_group_text">Да</span>
-            <input type="radio" name="radio_group">
-            <span>Нет</span>
+          </label>
+          <label class="radio_group radio_no">
+            <input class="radio" type="radio" name="radio_group">
+            <span class="radio_group_text">Нет</span>
           </label>
         </div>
         <div class="form_group">
-          <label for="">
-            <span>Расскажите какой контент вы хотели бы видеть на нашем сайте?</span>
-            <textarea class="field textarea" placeholder="Может, больше рецептов?"></textarea>
+          <label>
+            <span class="field-label">Расскажите какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="field_textarea" placeholder="Может, больше рецептов?"></textarea>
           </label>
         </div>
         <div class="form_group">
-          <button type="button" name="button">Отправить</button>
+          <button class="button_send" type="button" name="button">Отправить</button>
         </div>
       </form>
+      </div>
+      <button class="popup_close" type="button" name="button"></button>
+      </div>
   </div>
   </body>
 
