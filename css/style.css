@@ -26,7 +26,7 @@
 }
 
 .header {
-  background-image: url("../images/banner-bg.jpg");
+  background-image: url(../images/banner-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
@@ -97,7 +97,7 @@
 
 }
 .backimage_1 {
-  background-image: url("../images/trend1.jpg");
+  background-image: url(../images/trend1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -106,7 +106,7 @@
   position: relative;
 }
 .backimage_2 {
-  background-image: url("../images/trend2.jpg");
+  background-image: url(../images/trend2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -116,7 +116,7 @@
   position: relative;
 }
 .backimage_3 {
-  background-image: url("../images/trend3.jpg");
+  background-image: url(../images/trend3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -126,7 +126,7 @@
   position: relative;
 }
 .backimage_4 {
-  background-image: url("../images/trend4.jpg");
+  background-image: url(../images/trend4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -436,7 +436,7 @@ cursor: pointer;
 }
 
 .button_search {
-  background-image: url("../swg/search.svg");
+  background-image: url(../swg/search.svg);
   background-color: #b59f5b;
   background-size: 15px;
   background-position: center center;
@@ -610,24 +610,24 @@ object-fit: cover;
 }
 
 .social-icon__twitter {
-  background-image: url("../swg/004-twitter.svg");
+  background-image: url(../swg/004-twitter.svg);
 }
 
 .social-icon__pinterest {
-  background-image: url("../swg/001-pinterest.svg");
+  background-image: url(../swg/001-pinterest.svg);
 }
 
 .social-icon__facebook {
-  background-image: url("../swg/002-facebook-logo.svg");
+  background-image: url(../swg/002-facebook-logo.svg);
   background-position: center;
 }
 
 .social-icon__instagram {
-  background-image: url("../swg/005-instagram.svg");
+  background-image: url(../swg/005-instagram.svg);
 }
 
 .social-icon__tumblr {
-  background-image: url("../swg/003-tumblr.svg");
+  background-image: url(../swg/003-tumblr.svg);
 }
 
 .footer_container {
@@ -680,7 +680,7 @@ object-fit: cover;
   height: 38px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../swg/form-arrows.svg");
+  background-image: url(../swg/form-arrows.svg);
   background-repeat: no-repeat;
   background-position: right 5px center;
   background-size: 10px;
@@ -702,7 +702,7 @@ object-fit: cover;
 }
 .radio_group_text::before {
   content: "";
-  background-image: url("../swg/form-empty-circle.svg");
+  background-image: url(../swg/form-empty-circle.svg);
   background-repeat: no-repeat;
   display: inline-block;
   width: 15px;
@@ -717,7 +717,7 @@ object-fit: cover;
 }
 
 .radio:checked + .radio_group_text::before {
-  background-image: url("../swg/form-circle.svg");
+  background-image: url(../swg/form-circle.svg);
 }
 .radio {
   position: absolute;
@@ -756,7 +756,7 @@ object-fit: cover;
  .popup_close {
    width: 17px;
    height: 17px;
-   background-image: url("../swg/form-x.svg");
+   background-image: url(../swg/form-x.svg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 17px;
@@ -767,12 +767,12 @@ object-fit: cover;
    background-color: rgba(0,0,0,0);
 
  }
- @media (min-width:1200px) {
+ @media (min-width: 1200px) {
    .menu_button {
      display: none;
    }
  }
- @media (max-width:1200px) and (min-width:641px){
+ @media (max-width: 1200px) and (min-width: 641px) {
    .menu-list {
      display: none;
    }
