@@ -49,9 +49,7 @@
   z-index: -1;
 }
 .trends {
-  width: 100%;
   display: flex;
-
 }
 
   .trends_post {
@@ -502,23 +500,32 @@ cursor: pointer;
   color: #b59f5b;
 }
 .our_goods {
-  max-width: 1200px;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  }
-  .good {
+ display: flex;
+ max-width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.good {
   width: 33.3%;
-  flex-grow: 1;
-  }
+  margin-left: 9%;
+
+}
+.good:first-child {
+   margin-left: 2%;
+}
+.good:last-child {
+   margin-right: 2%;
+}
+.good_image_box {
+
+}
+
 .good_image {
-max-width: 300px;
-max-height: 200px;
-object-fit: cover;
+max-width: 301px;
+max-height: 207px;
 }
 
 .good_content {
-  max-width: 300px;
   outline: 3px solid #b59f5b;
   outline-offset: 15px;
   margin-top: -25px;
