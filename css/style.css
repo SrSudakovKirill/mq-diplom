@@ -51,11 +51,23 @@
 .trends {
   width: 100%;
   display: flex;
-  align-items: flex-end;
-  }
+
+}
 
   .trends_post {
     width: calc(25% - 4px);
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../images/trend1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 0;
+    position: relative;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 24px;
+    padding-top: 159px;
   }
   .trends_post:nth-child(1n+2) {
     margin-left: 4px;
@@ -94,51 +106,22 @@
 
 .trends_post_text {
   border: 3px solid #b59f5b;
+  padding-left: 35px;
+  padding-bottom: 38px;
+  padding-top: 65px;
+}
 
-}
-.backimage_1 {
-  background-image: url(../images/trend1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  z-index: 0;
-  height: 317px;
-  position: relative;
-}
+
 .backimage_2 {
   background-image: url(../images/trend2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  z-index: 0;
-  position: relative;
-  height: 317px;
-  position: relative;
-}
+  }
 .backimage_3 {
   background-image: url(../images/trend3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  z-index: 0;
-  position: relative;
-  height: 317px;
-  position: relative;
 }
 .backimage_4 {
   background-image: url(../images/trend4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  z-index: 0;
-  position: relative;
-  height: 317px;
-  position: relative;
 }
-.backimage_1::after,
-.backimage_2::after,
-.backimage_3::after,
-.backimage_4::after {
+.trends_post_text::after {
   content: "";
   position: absolute;
   top: 0;
@@ -149,6 +132,8 @@
   opacity: 0.6;
   z-index: -1;
 }
+
+
 header .color_white {
   color: #ffffff;
 }
