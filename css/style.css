@@ -36,6 +36,11 @@
   z-index: 0;
   width: 100%;
 }
+.container_header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .header::after {
   content: "";
@@ -45,7 +50,7 @@
   right: 0;
   bottom: 0;
   background-color: #000000;
-  opacity: 0.45;
+  opacity: 0.6;
   z-index: -1;
 }
 .trends {
@@ -107,6 +112,8 @@
   padding-left: 35px;
   padding-bottom: 38px;
   padding-top: 65px;
+  width: 100%;
+  padding-right: 100px;
 }
 
 
@@ -136,8 +143,7 @@ header .color_white {
   color: #ffffff;
 }
 
-.container_header {
-  width: 100%;
+.container_menu {
   display: flex;
   padding: 0 15px;
   justify-content: space-between;
@@ -160,11 +166,7 @@ header .color_white {
   padding-right: 250px;
   margin-bottom: 100px;
   margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  margin-bottom: 100px;
-  margin-top: 100px;
 }
 .menu_button {
 width: 23px;
@@ -508,6 +510,8 @@ cursor: pointer;
 .good {
   width: 33.3%;
   margin-left: 9%;
+  display: flex;
+  flex-direction: column;
 
 }
 .good:first-child {
@@ -530,8 +534,7 @@ max-height: 207px;
   outline-offset: 15px;
   margin-top: -25px;
   padding-top: 35px;
-  height: 250px;
-
+  flex: 1;
 }
 .good_link {
   color: #b59f5b;
